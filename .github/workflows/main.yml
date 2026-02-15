@@ -1,8 +1,9 @@
 name: Scheduled Workflow
 
 on:
+  workflow_dispatch:   # allows you to run manually
   schedule:
-    - cron: "*/5 * * * *"   # runs every 5 minutes
+    - cron: "*/5 * * * *"   # runs every 5 minutes automatically
 
 jobs:
   build:
